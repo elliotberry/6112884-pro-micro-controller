@@ -28,7 +28,7 @@ matrix
 	muxstrobe 2		CAPS_LOCK	  unassigned	C			  	F			      R		      	4			    	UNASSIGNED	UNASSIGNED	
 	muxstrobe 3		A			      LSHIFT		  V			  	G			      T		      	5			    	UNASSIGNED	UNASSIGNED	
 	# 2
-	muxstrobe 4		LCTRL		    LGUI		    B			  	H			      Y		      	6			    	UNASSIGNED	UNASSIGNED	
+	muxstrobe 4		LGUI		    LCTRL		    B			  	H			      Y		      	6			    	UNASSIGNED	UNASSIGNED	
 	muxstrobe 5		LALT		    unassigned	N			  	J			      U		      	7			    	UNASSIGNED	UNASSIGNED	
 	# 3
 	muxstrobe 6		DOWN		    SPACE		    M				  K			      I		      	8			    	UNASSIGNED	UNASSIGNED	
@@ -40,8 +40,8 @@ matrix
 	muxstrobe 10	f2	f5	    rshift	    backspace	RIGHT_BRACE	EQUAL			  UNASSIGNED	UNASSIGNED	
 	muxstrobe 11	PAD_3		    PAD_6		    RSHIFT		ENTER		    BACKSLASH	  esc	        UNASSIGNED	UNASSIGNED	
 	# 6
-	muxstrobe 12	PAD_2		    PAD_5		    f11		    f10	f9	    back_quote	f3	        PAD_0	
-	muxstrobe 13	PAD_ASTERIX	PAD_9		    f7		    PAD_4		    PAD_8		    PAD_SLASH		END			    f8	
+	muxstrobe 12	PAD_2		    PAD_5		    f11		    f10	f9	    backspace	f3	        PAD_0	
+	muxstrobe 13	PAD_ASTERIX	PAD_9		    f7		    PAD_4		    PAD_8		    PAD_SLASH		END			    DELETE	
 	# 7
 	muxstrobe 14	PAD_MINUS	  PAD_PLUS	  UP				DELETE		  PAD_7		    NUM_LOCK		INSERT		  PRINTSCREEN	
 	muxstrobe 15	PAD_ENTER	  PAD_PERIOD	f12		    PAGE_DOWN	  PAGE_UP		  PAUSE			  HOME		    SCROLL_LOCK	
@@ -60,14 +60,6 @@ macro F7
 	POP_META			
 	PRESS ENTER			
 	POP_ALL_META			
-endmacro
-
-macro f8
-	PUSH_META CLEAR_META all		
-	SET_META ctrl		
-	PRESS z				
-	POP_META			
-	POP_ALL_META
 endmacro
 
 
